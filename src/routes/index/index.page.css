@@ -1,0 +1,45 @@
+/* /index 専用。index-root 配下だけに限定して他ページへの影響を避ける */
+#index-root {
+    /* Tailwindと共存。ここで背景や余白の微調整を一括で */
+    background: linear-gradient(180deg, #ffe4ef 0%, #fff 60%);
+    padding: 2rem 1rem;
+  }
+  
+  #index-root .heading {
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    color: #be185d; /* tailwindのpink-700相当 */
+    text-shadow: 0 1px 0 #fff, 0 6px 24px rgba(190, 24, 93, 0.2);
+  }
+  
+  #index-root .nav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #index-root .nav-link {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 0.875rem;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(190, 24, 93, 0.15);
+    box-shadow: 0 6px 18px rgba(190, 24, 93, 0.08);
+    color: #1f2937; /* slate-800 */
+    text-decoration: none;
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+  }
+  
+  #index-root .nav-link:hover {
+    transform: translateY(-1px);
+    background: #fff;
+    box-shadow: 0 8px 22px rgba(190, 24, 93, 0.16);
+  }
+  
+  @media (max-width: 480px) {
+    #index-root { padding: 1.25rem 0.75rem; }
+    #index-root .nav-link { width: 100%; text-align: center; }
+  }
+  

@@ -1,0 +1,16 @@
+﻿# Node / SvelteKit
+node_modules
+.svelte-kit
+build
+.vercel
+.netlify
+
+# env
+.env
+.env.*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
