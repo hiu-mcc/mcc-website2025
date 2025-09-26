@@ -1,45 +1,145 @@
-/* /index 専用。index-root 配下だけに限定して他ページへの影響を避ける */
-#index-root {
-    /* Tailwindと共存。ここで背景や余白の微調整を一括で */
-    background: linear-gradient(180deg, #ffe4ef 0%, #fff 60%);
-    padding: 2rem 1rem;
-  }
-  
-  #index-root .heading {
-    font-size: clamp(2rem, 6vw, 3.25rem);
-    font-weight: 800;
-    letter-spacing: 0.03em;
-    color: #be185d; /* tailwindのpink-700相当 */
-    text-shadow: 0 1px 0 #fff, 0 6px 24px rgba(190, 24, 93, 0.2);
-  }
-  
-  #index-root .nav {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  #index-root .nav-link {
-    display: inline-block;
-    padding: 0.6rem 1rem;
-    border-radius: 0.875rem;
-    background: rgba(255, 255, 255, 0.85);
-    border: 1px solid rgba(190, 24, 93, 0.15);
-    box-shadow: 0 6px 18px rgba(190, 24, 93, 0.08);
-    color: #1f2937; /* slate-800 */
-    text-decoration: none;
-    transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
-  }
-  
-  #index-root .nav-link:hover {
-    transform: translateY(-1px);
-    background: #fff;
-    box-shadow: 0 8px 22px rgba(190, 24, 93, 0.16);
-  }
-  
-  @media (max-width: 480px) {
-    #index-root { padding: 1.25rem 0.75rem; }
-    #index-root .nav-link { width: 100%; text-align: center; }
-  }
-  
+/* Utility */
+.container { width: min(1100px, calc(100% - 3rem)); margin-inline: auto; }
+.lead { font-size: clamp(1rem, 2.2vw, 1.125rem); line-height: 1.9; }
+
+/* ===== Hero ===== */
+
+
+.hero { position: relative; min-height: min(78vh, 860px); display: grid; }
+.hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero__overlay {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(1000px 400px at 10% 0%, rgba(255,255,255,.75), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.15) 35%, rgba(0,0,0,0) 60%);
+  mix-blend-mode: multiply;
+}
+
+
+.hero__shapes::before, .hero__shapes::after{
+  content:""; position:absolute; border-radius:9999px; pointer-events:none;
+}
+
+
+.hero__shapes::before{
+  width: 420px; height: 420px; left:-120px; top:-120px;
+  background: radial-gradient(circle at 30% 30%, #7dd3fc 0, #22d3ee 45%, transparent 60%);
+  filter: blur(4px); opacity:.9;
+}
+
+
+.hero__shapes::after{
+  width: 360px; height: 360px; right:-120px; top:-60px;
+  background: radial-gradient(circle at 30% 30%, #a7f3d0 0, #c4b5fd 45%, transparent 60%);
+  filter: blur(6px); opacity:.9;
+}
+
+
+.hero__inner {
+  position: relative; z-index: 2;
+  display: grid; align-content: center; gap: .75rem;
+  padding: clamp(1.2rem, 4vw, 2rem);
+  min-height: inherit;
+}
+
+
+.hero__title{
+  color: rgb(255, 255, 255);
+  font-weight: 900; line-height: .9;
+  font-size: clamp(2.6rem, 8.4vw, 6rem);
+  text-shadow: 0 2px 0 rgba(0,0,0,.2), 0 8px 30px rgba(0,0,0,.35);
+  letter-spacing:.02em;
+}
+
+
+.hero__subtitle{
+  color: #3e2c2c;
+  font-size: clamp(0.9rem, 2.4vw, 1.1rem);
+  opacity:.9;
+}
+
+
+.apply-btn{
+  position: absolute; right: clamp(1rem, 4vw, 2rem); bottom: clamp(1rem, 4vw, 2rem);
+  display:inline-block; padding:.75rem 1.1rem; border-radius:9999px;
+  background: linear-gradient(180deg, #34d399, #3b82f6);
+  color:#fff; font-weight:700; text-decoration:none;
+  box-shadow: 0 10px 30px rgba(59,130,246,.35);
+  transform: translateY(0); transition: transform .15s ease, box-shadow .15s ease;
+}
+
+
+.apply-btn:hover{ transform: translateY(-2px); box-shadow: 0 16px 36px rgba(59,130,246,.45); }
+
+/* ===== Section headings ===== */
+.section-title{
+  text-align:center; font-size: clamp(1.4rem, 3.6vw, 1.8rem);
+  font-weight: 800; margin-bottom: 1.25rem; letter-spacing:.06em;
+}
+
+
+.wmrk{
+  position: absolute; inset-inline:0; top: -6px; text-align:center;
+  font-weight: 900; font-size: clamp(3rem, 16vw, 7rem);
+  letter-spacing:.06em; user-select:none; pointer-events:none;
+  background: linear-gradient(90deg, #a7f3d0, #93c5fd, #fbcfe8);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  opacity:.25;
+}
+
+
+.subhead{
+  text-align:center; font-weight:700; margin-bottom: 1.25rem;
+}
+
+
+/* ===== Facility cards ===== */
+.card{
+  display:grid; gap: 1rem; grid-template-columns: 1fr; padding-block: .25rem;
+}
+
+@media (min-width: 920px){
+  .card{ grid-template-columns: 1.15fr .85fr; align-items:center; }
+  .card:nth-child(even){ grid-template-columns: .85fr 1.15fr; }
+  .card:nth-child(even) .card__media{ order:2; }
+}
+
+.card__media{ position: relative; }
+.card__media img{ width:100%; height:auto; border-radius: 18px; box-shadow: 0 20px 60px rgba(0,0,0,.10); }
+.card__no{
+  position: absolute; right: .75rem; top: .25rem;
+  font-weight: 900; font-size: clamp(3rem, 12vw, 6.5rem);
+  color: rgba(0,0,0,.06); letter-spacing:.02em;
+}
+
+.card__body{ padding-inline: .5rem; }
+.card__title{ font-size: clamp(1.2rem, 3.2vw, 1.6rem); font-weight: 800; margin-bottom:.25rem; }
+.card__text{ opacity:.85; line-height:1.9; }
+
+/* ===== Related ===== */
+.related{
+  display:grid; gap: 1rem; grid-template-columns: repeat(1, minmax(0,1fr));
+}
+@media (min-width: 860px){ .related{ grid-template-columns: repeat(3, minmax(0,1fr)); } }
+.related__item{
+  border-radius: 18px; background:#fff; padding: .9rem; box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+.related__img{ width:100%; height:auto; border-radius: 12px; margin-bottom:.5rem; }
+.related__title{ font-weight:700; margin-bottom:.25rem; }
+.related__text{ font-size:.95rem; opacity:.8; line-height:1.8; }
+
+/* ===== SNS ===== */
+.sns{ display:grid; gap: 1.25rem; grid-template-columns: 1fr; }
+@media (min-width: 980px){ .sns{ grid-template-columns: 1fr 1fr; } }
+.sns__panel{ background:#fff; border-radius: 18px; padding: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,.06); }
+.sns__label{ font-weight:700; margin-bottom:.5rem; }
+
+/* ===== Map ===== */
+.map{ background:#fff; border-radius: 22px; padding: .75rem; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+.map__frame{ width:100%; height: clamp(290px, 48vw, 420px); border:0; border-radius: 16px; }
+
+/* ===== Footer ===== */
+.footer{ display:grid; place-items:center; text-align:center; gap: .75rem; padding: 2rem 1rem 3rem; }
+.footer__logos{ display:flex; gap: 1.2rem; align-items:center; }
+.footer__addr{ font-style: normal; opacity:.85; line-height:1.8; }
+.footer__copy{ display:block; margin-top:.25rem; opacity:.6; font-size:.85rem; }
