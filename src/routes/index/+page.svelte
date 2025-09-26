@@ -1,3 +1,7 @@
+<!-- こっちが本体だぞ！！練習用は別！！覚えろ渡辺！！-->
+
+
+
 <!-- へったー-->
 <section class="hero">
   <img src="/images/hero.jpg" alt="MCC外観" class="hero__img" />
@@ -18,7 +22,7 @@
 <section class="container py-14 md:py-20">
   <h2 class="sr-only">メディアクリエイティブセンター</h2>
   <p class="lead text-center">
-  ここもじいいいいいいいいいいいいいいいいいいいいいいいい
+ ちかちー
 
   </p>
 </section>
