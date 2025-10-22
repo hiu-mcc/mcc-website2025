@@ -4,7 +4,7 @@
 
 <!-- へったー-->
 <section class="hero">
-  <img src="/images/hero.jpg" alt="MCC外観" class="hero__img" />
+  <img src="/MCC/top.png" alt="MCC外観" class="hero__img" />
   <div class="hero__overlay"></div>
 
   <!-- 飾り図形-->
@@ -13,17 +13,22 @@
   <div class="hero__inner">
     <h1 class="hero__title">Media<br/>Creative<br/>Center</h1>
     <p class="hero__subtitle">Supporting Students' Creative Activities</p>
-
-    <a href="/apply" class="apply-btn">利用申請</a>
   </div>
+
+  <!-- 置き換え：利用申請ボタン -->
+<a href="/apply" class="apply-badge" aria-label="利用申請">
+  <span class="apply-badge__core">利用<br>申請</span>
+  <span class="apply-badge__blob apply-badge__blob--left" aria-hidden="true"></span>
+  <span class="apply-badge__blob apply-badge__blob--right" aria-hidden="true"></span>
+</a>
 </section>
 
 <!-- 説明の文書 -->
 <section class="container py-14 md:py-20">
-  <h2 class="sr-only">メディアクリエイティブセンター</h2>
+  <h2 class="section-title">メディアクリエイティブセンターとは</h2>
   <p class="lead text-center">
- ちかちー
-
+ メディアクリエイティブセンター（MCC）は、最新鋭の設備を導入したクリエイティブ施設です。
+北海道情報大学の学生は、個人制作やグループワークなどの創作活動全般に利用できます。
   </p>
 </section>
 
@@ -33,33 +38,32 @@
 
   const facilities = [
     {
-      no: '01',
       title: '共創エリア',
       body:
-        '最新モニタ・シェアデスクシステム導入。グループ制作やゼミ演習のベースとして活用できます。',
+        '創作活動を行うためのスペース。ハイスペックPCが常設され、映像制作やWeb制作などのクリエイティブな作業に活用できます。ディスカッションスペースを活用してグループワークを進めることもできます。',
       img: '/images/facility-1.jpg'
     },
     {
       no: '02',
       title: 'サウンドアートラボ',
       body:
-        '音響/レコーディング/アプリケーション対応。ワークフロー最適化と試作検証のための実験環境を提供。',
+        '楽曲制作や音源収録などの音楽活動を行うためのスペース。音楽関連の機材が設置されています。利用には、MCC利用申請後に別途登録作業が必要です',
       img: '/images/facility-2.jpg'
     },
     {
       no: '03',
       title: 'テックラボ',
       body:
-        '電子工作・プロトタイピング用の設備を整備。センサー/マイコン/3Dプリンタ等を段階的に導入予定。',
+        'はんだづけなどの電子工作を行うためのスペース。はんだごてやブレッドボードなど、電子回路のプロトタイピングに必要な機材が設置されています。利用には、MCC利用申請後に別途登録作業が必要です。',
       img: '/images/facility-3.jpg'
     }
   ];
 
   // 関連施設
   const related = [
-    { title: 'モーションキャプチャー', img: '/images/related-1.jpg', body: '最新のほにゃほにゃ。' },
-    { title: 'Gスタジオ', img: '/images/related-2.jpg', body: '最新システムをめにゃめにゃ' },
-    { title: 'HIUファブ', img: '/images/related-3.jpg', body: '最新システムをもけもけ' }
+    { title: 'モーションキャプチャー', img: '/images/related-1.jpg', body: 'VICON社製のマーカレスモーションキャプチャを設置。映画、ゲーム制作、研究に活用できます。北海道情報技術研究所 1階 大スタジオ内にあります。' },
+    { title: 'Gスタジオ', img: '/images/related-2.jpg', body: 'e-SportsのためのPC機器類を設置。eDCタワー6F (図書館内) にあります。' },
+    { title: 'HIUファブ', img: '/images/related-3.jpg', body: '3Dプリンタやレーザー加工機などのデジタルファブリケーション機器を設置。Gスタジオ内にあります。' }
   ];
 </script>
 
@@ -131,6 +135,12 @@
     <!-- 地図-->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1909.7266361950983!2d141.53301674983155!3d43.07852553459276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2d9dfb0126df%3A0x6295aff7704df0d4!2z5YyX5rW36YGT5oOF5aCx5oqA6KGT56CU56m25omA!5e0!3m2!1sja!2sjp!4v1758260037465!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+</section>
+
+<!-- 背景-->
+<section class="hero hero--bg">
+  <div class="hero__overlay"></div>
+  <div class="hero__inner">…</div>
 </section>
 
 <!-- フッター-->
