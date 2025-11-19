@@ -41,7 +41,7 @@
   <span class="riyou-badge__ring" aria-hidden="true">
     <svg viewBox="0 0 200 200" role="img" aria-label="RIYOU SHINSEI">
       <defs>
-        <!-- リング径 -->
+        <!-- リング径3 -->
         <path id="rb-circle" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/>
       </defs>
       <g class="rb-text">
