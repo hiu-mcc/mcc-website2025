@@ -1,14 +1,14 @@
-name: Deploy to GitHub Pages
+name: Deploy SvelteKit to GitHub Pages
 
 on:
   push:
-    branches: [ main ]   # main へ push で自動デプロイ
-  workflow_dispatch:      # 手動実行ボタン
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
-  contents: read
   pages: write
   id-token: write
+  contents: read
 
 concurrency:
   group: "pages"
@@ -17,34 +17,35 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 24.8
-          cache: 'npm'
+          node-version: 22.12
+          cache: npm
 
-      - name: Install
+      - name: Install dependencies
         run: npm ci
 
       - name: Build
-        run: npm run build      # dist/ が生成される
+        run: npm run build
 
-      - name: Upload artifact
+      - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: build
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: deploy
         uses: actions/deploy-pages@v4
