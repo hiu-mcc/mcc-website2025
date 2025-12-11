@@ -12,14 +12,14 @@ export default {
     }),
 
     paths: {
-      base: dev ? '' : '/mcc-website2025',
-      assets: ''
+      base: dev ? "" : "/mcc-website2025",
+      assets: ""
     },
 
     prerender: {
-      entries: ['*'],
-      handleHttpError: 'ignore',
-      handleUnseenRoutes: 'ignore'
+      entries: ["/"],   // ★ 最重要：index を明示的に指定する
+      handleHttpError: "ignore",
+      handleUnseenRoutes: "ignore"
     }
   }
 };
