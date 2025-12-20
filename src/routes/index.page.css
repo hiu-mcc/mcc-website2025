@@ -226,7 +226,7 @@ body{
   height: 90px;
   border-radius: 50%;     /* 丸にする */
   background: transparent;
-  box-shadow: 0 0 0 6px #fff inset; /* ← 枠の太さはここ(6px)で調整 */
+  box-shadow: 0 0 0 6px #fff inset; 
 
 
    position: relative;
@@ -253,15 +253,6 @@ border-radius: 0 0 50px 50px;
  filter: drop-shadow(5px 5px 5px #a9a9a9);
 }
 
-@media (max-width: 640px){
-  .TOP__img{
-    height: auto;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    object-position: center top; 
-    border-radius: 0 0 90px 90px;
-  }
-}
 
 .russo {
   font-family: "Russo One", "Noto Sans JP", system-ui, sans-serif;
@@ -373,6 +364,43 @@ border-radius: 0 0 50px 50px;
 }
 
 
+/*回る文字*/
+.riyou-badge__ring{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.riyou-badge__svg{
+  width: 135%;
+  height: 135%;
+
+  transform: translate(-13%, -12%);
+}
+
+
+.riyou-badge__text {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+
+/* ぐるぐる回転 */
+@keyframes riyou-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.riyou-badge__spin {
+  animation: riyou-rotate 16s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+.riyou-badge:hover .riyou-badge__spin {
+  animation-play-state: paused;
+}
+
 @keyframes riyou-rotate { to { transform: rotate(360deg); } }
 
 
@@ -384,10 +412,6 @@ border-radius: 0 0 50px 50px;
 @media (prefers-reduced-motion: reduce){
   .riyou-badge__spin{ animation: none; }
 }
-
-
-
-
 
 
 .section-title_01{
@@ -431,7 +455,7 @@ border-radius: 0 0 50px 50px;
 
 
 
-
+/*コンテンツたち*/
 
 
 .wmrk_01{
@@ -507,10 +531,28 @@ border-radius: 0 0 50px 50px;
 .card__media{ position: relative; }
 .card__media img{ width:100%; height:auto; border-radius: 18px; box-shadow: 0 20px 60px rgba(0,0,0,.10); }
 .card__no{
-  position: absolute; right: .75rem; top: .25rem;
-  font-weight: 900; font-size: clamp(3rem, 12vw, 6.5rem);
-  color: rgba(0,0,0,.06); letter-spacing:.02em;
+  position: absolute;
+  right: .75rem;
+  top: -32%;
+  font-weight: 900;
+  font-size: 160px;
+  letter-spacing: .02em;
+
+  /* 中を透かす */
+  color: transparent;
+
+  /*文字のフチ*/
+  -webkit-text-stroke: 1px #000;
 }
+
+
+/*02だけ*/
+.card:nth-child(2) .card__no{
+  right: 65%;
+  
+}
+
+
 
 .card__body{ padding-inline: .5rem; }
 .card__title{ font-size: clamp(1.2rem, 3.2vw, 1.6rem); font-weight: 800; margin-bottom:.25rem; }
@@ -522,7 +564,7 @@ border-radius: 0 0 50px 50px;
 }
 @media (min-width: 860px){ .related{ grid-template-columns: repeat(3, minmax(0,1fr)); } }
 .related__item{
-  border-radius: 18px; background:#fff; padding: .9rem; box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  border-radius: 18px; background:#fff; padding: .9rem;
 }
 .related__img{ width:100%; height:auto; border-radius: 12px; margin-bottom:.5rem; }
 .related__title{ font-weight:700; margin-bottom:.25rem; }
@@ -659,8 +701,488 @@ border-radius: 0 0 50px 50px;
 }
 
 
-/* レスポンシブ：幅が狭い時は縦積み */
-@media (max-width: 860px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* タブレット */
+@media (max-width: 1024px) { 
+
+
+.TOP__img{
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top; 
+    border-radius: 0 0 90px 90px;
+  }
+  /*topテキスト*/
+
+  .russo{
+    font-size: 110px;
+  }
+
+  .TOP__inner{
+    left: 30px;
+    top: -1830px;
+  }
+
+
+  /* ▼スマホ用の図形レイアウト */
+  .TOP_kazari{
+    width: 240px;
+    height: 240px;
+
+    left: 75%;
+    top: -490%;
+  }
+
+    .TOP_kazari1{
+    width: 190px;
+    height: 190px;
+
+    left: -5%;
+    top: -730%;
+  }
+
+  .TOP_kazari2{
+    width: 140px;
+    height: 140px;
+
+    left: -5%;
+    top: -1100%;
+  }
+
+  /*小物*/
+
+
+  .circle{
+    width: 110px;
+    height: 110px;
+
+    left: 12%;
+    top: -1410%;
+    }
+
+    .circle1{
+    width: 10px;
+    height: 90px;
+
+    left: 25%;
+    top: -1300%;
+  }
+
+
+.circle2{
+  width: 55px;
+  height: 60px;
+
+  left: 16%;
+  top: -2520%;
+}
+
+.circle3{
+  width: 50px;
+  height: 50px;
+
+  left: 50%;
+  top: -2990%;
+}
+
+.circle4{
+  width: 40px;
+  height: 40px;
+
+  left: 45%;
+  top: -2390%;
+}
+
+.circle5{
+  width: 30px;
+  height: 30px;
+
+  left: 20%;
+  top: -3100%;
+}
+
+.circle6{
+  width: 90px;
+  height: 90px;
+  box-shadow: 0 0 0 3px #fff inset; 
+
+  left: 5%;
+  top: -1840%;
+}
+
+.zukei__img{
+  width: 45%;
+
+  left: 60%;
+  top: -600%;
+}
+
+
+
+  /*利用申請*/
+    .riyou-badge{
+      top:90%;
+
+  }
+
+
+
+  /*コンテンツ部分*/
+
+  .section-card{
+    --raise: 20rem;
+    padding-top: calc(clamp(1.5rem, 4vw, 3rem) + var(--raise));
+    top: -1380px; 
+  }
+
+  /*虹文字*/
+  .wmrk_01{
+  font-size: 3.5rem;
+  top: -9%;
+}
+
+  .wmrk_02{
+  white-space: nowrap;
+  font-size: 3.5rem;
+  top: -4%;
+  left: -5%;
+}
+
+  .wmrk_03{
+  font-size: 3.5rem;
+  top:-4%;
+}
+
+/*説明エリア*/
+.section-title_01{
+    white-space: nowrap;
+    font-size: 26px;
+    position: absolute;
+    bottom: 97%;
+    left: 27%;
+
+}
+
+.card__no{
+top: -30%;
+}
+
+.section-title_02{
+left: 300px;
+bottom: 104%;
+
+}
+
+.card:nth-child(2) .card__no{
+  right: 70%;
+  top: -30%;
+  
+}
+
+
+.lead{
+  position: relative;
+  transform: translateY(-160%);
+}
+
+
+/*SNS*/
+
+.section-title_03{
+  top: -2%;
+  left: 40%;
+}
+
+.sns-section {
+  margin-top: -150%;
+}
+
+.sns__panel{
+  position: relative;
+  left: 15%;
+}
+
+.fb-page{
+  position: relative;
+  left: 3%;
+}
+
+/*地図*/
+ .map{ 
+  margin-top: 20px; 
+ }
+
+ .section-title_04{
+  top: 2%;
+  left: 43%;
+ }
+
+/*フッター*/
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* スマホ */
+@media (max-width: 640px){
+
+
+  .TOP__img{
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top; 
+    border-radius: 0 0 90px 90px;
+  }
+  /*topテキスト*/
+
+  .russo{
+    font-size: 75px;
+  }
+
+  .TOP__inner{
+    left: 20px;
+    top: -1090px;
+  }
+
+
+  /* ▼スマホ用の図形レイアウト */
+  .TOP_kazari{
+        width: 120px;
+    height: 120px;
+
+    left: 80%;
+    top: -520%;
+  }
+
+    .TOP_kazari1{
+        width: 110px;
+    height: 110px;
+
+    left: -10%;
+    top: -660%;
+  }
+
+  .TOP_kazari2{
+    width: 80px;
+    height: 80px;
+
+    left: -10%;
+    top: -1110%;
+  }
+
+  /*小物*/
+
+
+  .circle{
+    width: 90px;
+    height: 90px;
+
+    left: 3%;
+    top: -960%;
+    }
+
+    .circle1{
+    width: 10px;
+    height: 40px;
+
+    left: 37%;
+    top: -1700%;
+  }
+
+
+.circle2{
+  width: 25px;
+  height: 30px;
+
+  left: 20%;
+  top: -2860%;
+}
+
+.circle3{
+  width: 18px;
+  height: 18px;
+
+  left: 70%;
+  top: -4790%;
+}
+
+.circle4{
+  width: 18px;
+  height: 18px;
+
+  left: 45%;
+  top: -2990%;
+}
+
+.circle5{
+  width: 25px;
+  height: 25px;
+
+  left: 30%;
+  top: -2390%;
+}
+
+.circle6{
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 0 3px #fff inset; 
+
+  left: 5%;
+  top: -1940%;
+}
+
+.zukei__img{
+  width: 40%;
+
+  left: 65%;
+  top: -680%;
+}
+
+
+
+  /*利用申請*/
+    .riyou-badge{
+      top:90%;
+
+  }
+
+
+
+  /*コンテンツ部分*/
+
+  .section-card{
+    --raise: 20rem;
+    padding-top: calc(clamp(1.5rem, 4vw, 3rem) + var(--raise));
+    top: -750px; 
+  }
+
+  /*虹文字*/
+  .wmrk_01{
+  font-size: 3.5rem;
+  top: -12%;
+}
+
+  .wmrk_02{
+  white-space: nowrap;
+  font-size: 3.5rem;
+  top: -4%;
+}
+
+  .wmrk_03{
+  font-size: 3.5rem;
+  top:-4%;
+}
+
+/*説明エリア*/
+.section-title_01{
+    white-space: nowrap;
+    font-size: 23px;
+    position: absolute;
+    bottom: 94%;
+    left: 10%;
+
+}
+
+.card__no{
+top: -50%;
+}
+
+.section-title_02{
+left: 100px;
+bottom: 104%;
+
+}
+
+.card:nth-child(2) .card__no{
+  right: 45%;
+  top: -50%;
+  
+}
+
+
+.lead{
+  position: relative;
+  transform: translateY(-70%);
+}
+
+
+/*SNS*/
+
+.section-title_03{
+  top: -2%;
+  left: 37%;
+}
+
+.sns-section {
+  margin-top: -150%;
+}
+
+.sns__panel{
+  max-width: 360px;   /* ←好みで 320〜380 くらい */
+  padding: 10px;
+  position: relative;
+  left: 3%;
+}
+
+.fb-page{
+  width: 100%;
+  max-width: 360px;   /* 320〜380で好み */
+  margin: 0 auto;
+}
+
+/*地図*/
+ .map{ 
+  margin-top: 20px; 
+ }
+
+ .section-title_04{
+  top: 4%;
+  left: 35%;
+ }
+
+/*フッター*/
+
+ .brand-row{
+  width: 90%;
+  position: relative;
+  left: 5%;
+
+ }
+
   .footer-top{
     grid-template-columns: 1fr;
     justify-items: start;
@@ -669,10 +1191,26 @@ border-radius: 0 0 50px 50px;
     justify-content: flex-start;
     margin-top: 12px;
   }
+
+  .footer-bottom{
+    margin-top: 50px;
+  }
+
+  .footer-addr{
+    position: relative;
+    left: 15%;
+    top: 12px;
+  }
+
+  .hiu-logo{
+    left: 15%;
+  }
+
+  .hiu-logo2{
+    left: 35%;
+  }
+
 }
-
-
-
 
 
 
