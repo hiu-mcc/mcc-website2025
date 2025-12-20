@@ -4,7 +4,7 @@ html, body { margin: 0; padding: 0; width: 100%; overflow-x: hidden; }
 .lead { font-size: 20px; line-height: 1.9;    position: relative; transform: translate(0, -250%); /* X, Y。上へ12px */}
 body{
   /* サイト下地*/
-  background: url('/MCC/Group 10.png') center / cover fixed no-repeat;
+  background: url('MCC/Group 10.png') center / cover fixed no-repeat;
 }
 
 
@@ -23,7 +23,6 @@ body{
   font-size: clamp(2.6rem, 8.4vw, 6rem);
   letter-spacing:.02em;
 }
-
 
 
 
