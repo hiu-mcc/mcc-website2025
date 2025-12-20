@@ -87,6 +87,7 @@
 <!-- MCC説明文 -->
 
 <script>
+import { base } from '$app/paths';
   import './index.page.css';
 
   const facilities = [
@@ -208,7 +209,7 @@
     <!-- 左側 -->
     <div class="footer-left">
       <div class="brand-row">
-        <img src="/MCC/MCCrogo.png" alt="HIU Media Creative Center" class="brand-mcc" />
+        <img src="{base}/MCC/MCCrogo.png" alt="HIU Media Creative Center" class="brand-mcc" />
       </div>
 
       <address class="footer-addr">
@@ -220,7 +221,10 @@
 
     <!-- 右側 -->
     <div class="footer-right">
-      <a href="https://www.do-johodai.ac.jp/"><img src="{base}/MCC/HIUrogo.png" alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
+      <a href="https://www.do-johodai.ac.jp/">
+        <img src="{base}/MCC/HIUrogo.png" alt="北海道情報大学 ロゴ" class="hiu-logo" />
+      </a>
+
       <img src="{base}/MCC/kage.png" alt="北海道情報大学 ロゴ" class="hiu-logo2">
     </div>
   </div>
