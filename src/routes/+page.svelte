@@ -26,7 +26,7 @@
   <div class="circle3"></div>
   <div class="circle4"></div>
   <div class="circle5"></div>
-  <img src="./MCC/zukei01.png" alt="図形" class="zukei__img" />
+  <img src="{base}/MCC/zukei01.png" alt="図形" class="zukei__img" />
 
   <div class="TOP__inner">
   <h1 class="TOP__title russo">Media<br/>Creative<br/>Center</h1>
@@ -211,7 +211,7 @@
     <!-- 左側 -->
     <div class="footer-left">
       <div class="brand-row">
-        <img src="/MCC/MCCrogo.png" alt="HIU Media Creative Center" class="brand-mcc" />
+        <img src={"${base}/MCC/MCCrogo.png"} alt="HIU Media Creative Center" class="brand-mcc" />
       </div>
 
       <address class="footer-addr">
@@ -223,8 +223,8 @@
 
     <!-- 右側 -->
     <div class="footer-right">
-      <a href="https://www.do-johodai.ac.jp/"><img src="./MCC/HIUrogo.png" alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
-      <img src="/MCC/kage.png" alt="北海道情報大学 ロゴ" class="hiu-logo2">
+      <a href="https://www.do-johodai.ac.jp/"><img src={"{base}/MCC/HIUrogo.png"} alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
+      <img src={"{base}/MCC/kage.png"} alt="北海道情報大学 ロゴ" class="hiu-logo2">
     </div>
   </div>
 
