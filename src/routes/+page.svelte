@@ -5,11 +5,14 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </svelte:head>
+  <script>
+    import { base } from '$app/paths';
+  </script>
 
 <!-- ヘッター部分・メインTOP画像-->
 
 <section class="TOP">
-    <img src="./MCC/top.png" alt="MCC外観" class="TOP__img" />
+    <img src="{base}/MCC/top.png" alt="MCC外観" class="TOP__img" />
     <div class="TOP__overlay"></div>
 
   <!-- 装飾図形-->
