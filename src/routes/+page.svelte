@@ -5,9 +5,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </svelte:head>
-  <script>
-    import { base } from '$app/paths';
-  </script>
+
 
 <!-- ヘッター部分・メインTOP画像-->
 
