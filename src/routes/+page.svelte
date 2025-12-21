@@ -6,7 +6,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </svelte:head>
 
-
 <!-- ヘッター部分・メインTOP画像-->
 
 <section class="TOP">
@@ -27,7 +26,7 @@
   <img src="/MCC/zukei01.png" alt="図形" class="zukei__img" />
 
   <div class="TOP__inner">
-  <h1 class="TOP__title russo">Media<br/>Creative<br/>Center</h1>
+<h1 class="TOP__title russo">Media<br/>Creative<br/>Center</h1>
     <p class="TOP__subtitle">Supporting Students' Creative Activities</p>
   </div>
 
@@ -57,7 +56,7 @@
         />
       </defs>
 
-      <!-- 円の線-->
+      <!-- ★デバッグ用：円の線を見えるようにしておく -->
       <circle
         cx="100"
         cy="100"
@@ -66,7 +65,7 @@
         stroke-width="1"
       />
 
-      <!-- テキスト-->
+      <!-- ★ここに実際のテキスト -->
       <text
         class="riyou-badge__text riyou-badge__spin"
         font-size="12"
@@ -74,7 +73,7 @@
         fill="black"
       >
         <textPath xlink:href="#riyou-circle" startOffset="0%">
-          Click here when using the facility. • Click here when using the facility.I •
+          RIYOU SHINSEI • RIYOU SHINSEI • RIYOU SHINSEI • RIYOU SHINSEI
         </textPath>
       </text>
     </svg>
@@ -93,21 +92,21 @@
   const facilities = [
     { no: '01', title: '共創エリア',
       body: '創作活動を行うためのスペース。ハイスペックPCが常設され、映像制作やWeb制作などのクリエイティブな作業に活用できます。ディスカッションスペースを活用してグループワークを進めることもできます。',
-      img: './MCC/Image01.png' },
+      img: '/MCC/Image01.png' },
     { no: '02', title: 'サウンドアートラボ',
       body: '楽曲制作や音源収録などの音楽活動を行うためのスペース。音楽関連の機材が設置されています。利用には、MCC利用申請後に別途登録作業が必要です',
-      img: './MCC/Image02.png' },
+      img: '/MCC/Image02.png' },
     { no: '03', title: 'テックラボ',
       body: 'はんだづけなどの電子工作を行うためのスペース。はんだごてやブレッドボードなど、電子回路のプロトタイピングに必要な機材が設置されています。利用には、MCC利用申請後に別途登録作業が必要です。',
-      img: './MCC/Image03.png' }
+      img: '/MCC/Image03.png' }
   ];
 
   const related = [
-    { title: 'モーションキャプチャー', img: './MCC/Image04.png',
+    { title: 'モーションキャプチャー', img: '/MCC/Image04.png',
       body: 'VICON社製のマーカレスモーションキャプチャを設置。映画、ゲーム制作、研究に活用できます。北海道情報技術研究所 1階 大スタジオ内にあります。' },
     { title: 'Gスタジオ', img: '/MCC/PXL_20250613_050406028 1.png',
       body: 'e-SportsのためのPC機器類を設置。eDCタワー6F (図書館内) にあります。' },
-    { title: 'HIUファブ', img: './MCC/PXL_20250613_050629025 1.png',
+    { title: 'HIUファブ', img: '/MCC/PXL_20250613_050629025 1.png',
       body: '3Dプリンタやレーザー加工機などのデジタルファブリケーション機器を設置。Gスタジオ内にあります。' }
   ];
 </script>
@@ -221,7 +220,7 @@
 
     <!-- 右側 -->
     <div class="footer-right">
-      <a href="https://www.do-johodai.ac.jp/"><img src="/MCC/HIUrogo.png" alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
+      <a href=”https://www.do-johodai.ac.jp/”><img src="/MCC/HIUrogo.png" alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
       <img src="/MCC/kage.png" alt="北海道情報大学 ロゴ" class="hiu-logo2">
     </div>
   </div>
