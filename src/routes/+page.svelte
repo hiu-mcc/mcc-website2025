@@ -12,7 +12,7 @@
 <!-- ヘッター部分・メインTOP画像-->
 
 <section class="TOP">
-    <img src="{base}/MCC/top.png" alt="MCC外観" class="TOP__img" />
+<img src={`${base}/MCC/top.png`} alt="MCC外観" class="TOP__img" />
     <div class="TOP__overlay"></div>
 
   <!-- 装飾図形-->
@@ -26,7 +26,7 @@
   <div class="circle3"></div>
   <div class="circle4"></div>
   <div class="circle5"></div>
-  <img src="{base}/MCC/zukei01.png" alt="図形" class="zukei__img" />
+<img src={`${base}/MCC/zukei01.png`} alt="図形" class="zukei__img" />
 
   <div class="TOP__inner">
   <h1 class="TOP__title russo">Media<br/>Creative<br/>Center</h1>
@@ -90,8 +90,7 @@
 <!-- MCC説明文 -->
 
 <script>
-  import './index.page.css';  import './index.page.css';
-  import { base } from '$app/paths';
+  import './index.page.css';
 
   const facilities = [
     { no: '01', title: '共創エリア',
