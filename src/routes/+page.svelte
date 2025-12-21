@@ -211,7 +211,7 @@
     <!-- 左側 -->
     <div class="footer-left">
       <div class="brand-row">
-        <img src={"${base}/MCC/MCCrogo.png"} alt="HIU Media Creative Center" class="brand-mcc" />
+        <img src={`${base}/MCC/MCCrogo.png`} alt="HIU Media Creative Center" class="brand-mcc" />
       </div>
 
       <address class="footer-addr">
@@ -223,8 +223,8 @@
 
     <!-- 右側 -->
     <div class="footer-right">
-      <a href="https://www.do-johodai.ac.jp/"><img src={"{base}/MCC/HIUrogo.png"} alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
-      <img src={"{base}/MCC/kage.png"} alt="北海道情報大学 ロゴ" class="hiu-logo2">
+      <a href="https://www.do-johodai.ac.jp/"> <img src={`${base}/MCC/HIUrogo.png`} alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
+      <img src={`${base}/MCC/kage.png`} alt="北海道情報大学 ロゴ" class="hiu-logo2">
     </div>
   </div>
 
