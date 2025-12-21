@@ -90,7 +90,8 @@
 <!-- MCC説明文 -->
 
 <script>
-  import './index.page.css';
+  import './index.page.css';  import './index.page.css';
+  import { base } from '$app/paths';
 
   const facilities = [
     { no: '01', title: '共創エリア',
@@ -223,8 +224,10 @@
 
     <!-- 右側 -->
     <div class="footer-right">
-      <a href="https://www.do-johodai.ac.jp/"> <img src={`${base}/MCC/HIUrogo.png`} alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
-      <img src={`${base}/MCC/kage.png`} alt="北海道情報大学 ロゴ" class="hiu-logo2">
+      <a href="https://www.do-johodai.ac.jp/">
+        <img src={`${base}/MCC/HIUrogo.png`} alt="北海道情報大学 ロゴ" class="hiu-logo" />
+      </a>
+ <img src={`${base}/MCC/kage.png`} alt="北海道情報大学 ロゴ" class="hiu-logo2" />
     </div>
   </div>
 
