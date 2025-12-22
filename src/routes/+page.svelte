@@ -224,7 +224,7 @@
     <!-- 右側 -->
     <div class="footer-right">
      <a href="https://www.do-johodai.ac.jp/"><img src="MCC/HIUrogo.png" alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
-      <img src="/MCC/kage.png" alt="北海道情報大学 ロゴ" class="hiu-logo2">
+      <img src="MCC/kage.png" alt="北海道情報大学 ロゴ" class="hiu-logo2">
     </div>
   </div>
 
