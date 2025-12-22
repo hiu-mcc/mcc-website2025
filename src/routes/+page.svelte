@@ -1,18 +1,18 @@
 <svelte:head>
   <!-- 高速化：事前接続 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+
+
 
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </svelte:head>
-  <script>
-    import { base } from '$app/paths';
-  </script>
 
 <!-- ヘッター部分・メインTOP画像-->
 
+
 <section class="TOP">
-    <img src="{base}/MCC/top.png" alt="MCC外観" class="TOP__img" />
+    <img src="/MCC/top.png" alt="MCC外観" class="TOP__img" />
     <div class="TOP__overlay"></div>
 
   <!-- 装飾図形-->
@@ -26,10 +26,10 @@
   <div class="circle3"></div>
   <div class="circle4"></div>
   <div class="circle5"></div>
-  <img src="{base}/MCC/zukei01.png" alt="図形" class="zukei__img" />
+  <img src="/MCC/zukei01.png" alt="図形" class="zukei__img" />
 
   <div class="TOP__inner">
-  <h1 class="TOP__title russo">Media<br/>Creative<br/>Center</h1>
+<h1 class="TOP__title russo">Media<br/>Creative<br/>Center</h1>
     <p class="TOP__subtitle">Supporting Students' Creative Activities</p>
   </div>
 
@@ -59,7 +59,7 @@
         />
       </defs>
 
-      <!-- 円の線-->
+      <!-- ★デバッグ用：円の線を見えるようにしておく -->
       <circle
         cx="100"
         cy="100"
@@ -95,21 +95,21 @@
   const facilities = [
     { no: '01', title: '共創エリア',
       body: '創作活動を行うためのスペース。ハイスペックPCが常設され、映像制作やWeb制作などのクリエイティブな作業に活用できます。ディスカッションスペースを活用してグループワークを進めることもできます。',
-      img: './MCC/Image01.png' },
+      img: '/MCC/Image01.png' },
     { no: '02', title: 'サウンドアートラボ',
       body: '楽曲制作や音源収録などの音楽活動を行うためのスペース。音楽関連の機材が設置されています。利用には、MCC利用申請後に別途登録作業が必要です',
-      img: './MCC/Image02.png' },
+      img: '/MCC/Image02.png' },
     { no: '03', title: 'テックラボ',
       body: 'はんだづけなどの電子工作を行うためのスペース。はんだごてやブレッドボードなど、電子回路のプロトタイピングに必要な機材が設置されています。利用には、MCC利用申請後に別途登録作業が必要です。',
-      img: './MCC/Image03.png' }
+      img: '/MCC/Image03.png' }
   ];
 
   const related = [
-    { title: 'モーションキャプチャー', img: './MCC/Image04.png',
+    { title: 'モーションキャプチャー', img: '/MCC/Image04.png',
       body: 'VICON社製のマーカレスモーションキャプチャを設置。映画、ゲーム制作、研究に活用できます。北海道情報技術研究所 1階 大スタジオ内にあります。' },
     { title: 'Gスタジオ', img: '/MCC/PXL_20250613_050406028 1.png',
       body: 'e-SportsのためのPC機器類を設置。eDCタワー6F (図書館内) にあります。' },
-    { title: 'HIUファブ', img: './MCC/PXL_20250613_050629025 1.png',
+    { title: 'HIUファブ', img: '/MCC/PXL_20250613_050629025 1.png',
       body: '3Dプリンタやレーザー加工機などのデジタルファブリケーション機器を設置。Gスタジオ内にあります。' }
   ];
 </script>
@@ -181,9 +181,10 @@
       <div id="fb-root"></div>
         <div id="fb-root"></div>
         <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v24.0&appId=APP_ID"></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v24.0&appId=APP_ID"></script>
        <div class="fb-page" data-href="https://www.facebook.com/hiu.mcc/" data-tabs="timeline" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hiu.mcc/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hiu.mcc/">Mcc - Media Creative Center HIU</a></blockquote></div>
       </div>
+  </div>
 </section>
 
 <!-- ACCESS -->
@@ -211,7 +212,7 @@
     <!-- 左側 -->
     <div class="footer-left">
       <div class="brand-row">
-        <img src="{base}/MCC/MCCrogo.png" alt="HIU Media Creative Center" class="brand-mcc" />
+        <img src="/MCC/MCCrogo.png" alt="HIU Media Creative Center" class="brand-mcc" />
       </div>
 
       <address class="footer-addr">
@@ -223,8 +224,8 @@
 
     <!-- 右側 -->
     <div class="footer-right">
-      <a href="https://www.do-johodai.ac.jp/">  <img src="{base}/MCC/HIUrogo.png" alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
-      <img src="{base}/MCC/kage.png" alt="北海道情報大学 ロゴ" class="hiu-logo2">
+     <a href="https://www.do-johodai.ac.jp/"><img src="/MCC/HIUrogo.png" alt="北海道情報大学 ロゴ" class="hiu-logo"></a>
+      <img src="/MCC/kage.png" alt="北海道情報大学 ロゴ" class="hiu-logo2">
     </div>
   </div>
 
