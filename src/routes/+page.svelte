@@ -12,7 +12,7 @@
 
 
 <section class="TOP">
-    <img src="/MCC/top.png" alt="MCC外観" class="TOP__img" />
+    <img src="/mcc-website2025/MCC/top.png" alt="MCC外観" class="TOP__img" />
     <div class="TOP__overlay"></div>
 
   <!-- 装飾図形-->
