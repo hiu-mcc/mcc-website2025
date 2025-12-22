@@ -10,8 +10,8 @@ export default {
     adapter: adapter({ strict: false }),
 
     paths: {
-      base: dev ? '' : '/mcc-website2025',
-      assets: dev ? '' : '/mcc-website2025'
+      base: dev ? '' : '/mcc-website2025'
+
     },
 
     prerender: {
