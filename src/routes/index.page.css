@@ -986,7 +986,7 @@ bottom: 104%;
     height: 90px;
 
     left: 80%;
-    top: -1120%;
+    transform: translateY(-30vh); 
   }
 
     .TOP_kazari1{
@@ -994,7 +994,7 @@ bottom: 104%;
     height: 110px;
 
     left: -10%;
-    top: -960%;
+    transform: translateY(-30vh); 
   }
 
   .TOP_kazari2{
@@ -1002,7 +1002,7 @@ bottom: 104%;
     height: 80px;
 
     left: -10%;
-    top: -1110%;
+    transform: translateY(-30vh); 
   }
 
   /*小物*/
