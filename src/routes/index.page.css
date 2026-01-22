@@ -990,11 +990,11 @@ bottom: 104%;
   }
 
     .TOP_kazari1{
-        width: 110px;
-    height: 110px;
+        width: 90px;
+    height: 90px;
 
     left: -10%;
-    transform: translateY(-75vh); 
+    transform: translateY(-85vh); 
   }
 
   .TOP_kazari2{
@@ -1002,7 +1002,7 @@ bottom: 104%;
     height: 80px;
 
     left: -10%;
-    transform: translateY(-30vh); 
+    transform: translateY(-90vh); 
   }
 
   /*小物*/
