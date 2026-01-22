@@ -998,11 +998,11 @@ bottom: 104%;
   }
 
   .TOP_kazari2{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 
-    left: -10%;
-    transform: translateY(-130vh); 
+    left: -5%;
+    transform: translateY(-135vh); 
   }
 
   /*小物*/
