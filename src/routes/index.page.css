@@ -71,7 +71,7 @@ body{
   border-radius: 50%;
   background: #AA5ECD;/*背景色*/
 
-   position: relative;
+   position: absolute;
   left: 220px;
   top: -1630px; 
 
