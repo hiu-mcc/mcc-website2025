@@ -994,7 +994,7 @@ bottom: 104%;
     height: 110px;
 
     left: -10%;
-    transform: translateY(-30vh); 
+    transform: translateY(-75vh); 
   }
 
   .TOP_kazari2{
@@ -1013,7 +1013,7 @@ bottom: 104%;
     height: 90px;
 
     left: 3%;
-    top: -960%;
+    transform: translateY(-75vh); 
     }
 
     .circle1{
