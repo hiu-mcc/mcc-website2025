@@ -71,11 +71,11 @@ body{
   border-radius: 50%;
   background: #AA5ECD;/*背景色*/
 
-   position: absolute;
+   position: relative;
   left: 220px;
   top: -1630px; 
 
-    animation: floaty var(--float-dur) ease-in-out infinite;
+
   will-change: transform, filter;
 }
 
@@ -994,7 +994,7 @@ bottom: 104%;
     height: 90px;
 
     left: -10%;
-    transform: translateY(-85vh); 
+    transform: translateY(-88vh); 
   }
 
   .TOP_kazari2{
@@ -1002,7 +1002,7 @@ bottom: 104%;
     height: 80px;
 
     left: -10%;
-    transform: translateY(-50vh); 
+    transform: translateY(-90vh); 
   }
 
   /*小物*/
