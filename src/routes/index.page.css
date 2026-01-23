@@ -987,8 +987,8 @@ bottom: 104%;
     width: 140px;
     height: 140px;
 
-    left: 75%;
-    top: -6%;
+    left: 73%;
+    top: 3%;
   }
 
     .TOP_kazari1{
@@ -996,7 +996,7 @@ bottom: 104%;
     height: 90px;
 
     left: -10%;
-    transform: translateY(calc(-135 * var(--vh)));
+    top: 3%;
   }
 
   .TOP_kazari2{
@@ -1004,7 +1004,7 @@ bottom: 104%;
     height: 60px;
 
     left: 10%;
-    transform: translateY(calc(-127 * var(--vh)));
+    top: 16%;
     animation: none;
   }
 
