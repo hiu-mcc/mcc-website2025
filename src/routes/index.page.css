@@ -1091,7 +1091,7 @@ bottom: 104%;
   .section-card{
     --raise: 20rem;
     padding-top: calc(clamp(1.5rem, 4vw, 3rem) + var(--raise));
-    top: 120px; 
+    top: 70px; 
   }
 
   /*虹文字*/
@@ -1114,9 +1114,9 @@ bottom: 104%;
 /*説明エリア*/
 .section-title_01{
     white-space: nowrap;
-    font-size: 23px;
+    font-size: 15px;
     position: absolute;
-    bottom: 94%;
+    bottom: 100%;
     left: 10%;
 
 }
