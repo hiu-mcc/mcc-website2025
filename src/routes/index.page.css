@@ -1003,7 +1003,7 @@ bottom: 104%;
     height: 90px;
 
     left: -10%;
-    transform: translateY(-117vh); 
+    transform: translateY(calc(-170 * var(--vh)));
   }
 
   .TOP_kazari2{
@@ -1011,7 +1011,7 @@ bottom: 104%;
     height: 60px;
 
     left: 10%;
-    transform: translateY(calc(-90 * var(--vh)));
+    transform: translateY(-133vh); 
   }
 
   /*小物*/
