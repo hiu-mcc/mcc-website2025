@@ -1141,7 +1141,8 @@ bottom: 104%;
 .lead{
   position: absolute;
   font-size: 14px;
-  bottom: 80%;
+  bottom: 86%;
+  left: 4%;
 }
 
 
