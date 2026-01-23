@@ -212,9 +212,9 @@ body{
   width: 50px;
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
 
- position: relative;
+ position: absolute;
   left: 670px;
-  top: -220px;
+  top: 450px;
 
     filter: drop-shadow(0 8px 18px rgba(0,0,0,.25));
 
@@ -1057,7 +1057,7 @@ bottom: 104%;
   height: 25px;
 
   left: 30%;
-  top: -45%;
+  top: 55%;
 }
 
 .circle6{
@@ -1066,7 +1066,7 @@ bottom: 104%;
   box-shadow: 0 0 0 3px #fff inset; 
 
   left: 5%;
-  top: 10%;
+  top: 50%;
 }
 
 .zukei__img{
