@@ -996,7 +996,7 @@ bottom: 104%;
     height: 90px;
 
     left: -10%;
-    top: 3%;
+    top: -3%;
   }
 
   .TOP_kazari2{
@@ -1004,7 +1004,7 @@ bottom: 104%;
     height: 60px;
 
     left: 10%;
-    top: 16%;
+    top: 35%;
     animation: none;
   }
 
