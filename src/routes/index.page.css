@@ -988,7 +988,7 @@ bottom: 104%;
     height: 140px;
 
     left: 75%;
-    transform: translateY(calc(-120 * var(--vh)));
+    transform: translateY(calc(-10 * var(--vh)));
   }
 
     .TOP_kazari1{
