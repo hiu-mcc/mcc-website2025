@@ -984,18 +984,18 @@ bottom: 104%;
 
   /* ▼スマホ用の図形レイアウト */
   .TOP_kazari{
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
 
     left: 73%;
     top: -3%;
   }
 
     .TOP_kazari1{
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
 
-    left: -10%;
+    left: -5%;
     top: -3%;
   }
 
@@ -1004,7 +1004,7 @@ bottom: 104%;
     height: 60px;
 
     left: 10%;
-    top: 50%;
+    top: 60%;
     animation: none;
   }
 
