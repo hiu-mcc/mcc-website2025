@@ -1091,7 +1091,7 @@ bottom: 104%;
   .section-card{
     --raise: 20rem;
     padding-top: calc(clamp(1.5rem, 4vw, 3rem) + var(--raise));
-    top: 70px; 
+    top: 120px; 
   }
 
   /*虹文字*/
