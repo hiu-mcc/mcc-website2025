@@ -1127,6 +1127,11 @@ top: -53%;
 right: 43%;
 }
 
+.card:nth-child(2) .card__no{
+  right: 65%;
+  
+}
+
 .section-title_02{
 left: 60px;
 bottom: 102%;
