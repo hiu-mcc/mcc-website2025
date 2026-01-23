@@ -1139,9 +1139,8 @@ bottom: 104%;
 
 
 .lead{
-  position: absolute;
-  font-size: 20px;
-  transform: translateY(-70%);
+  position: absolute;  
+  transform: translateY(-67%);
 }
 
 
