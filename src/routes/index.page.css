@@ -1122,6 +1122,8 @@ bottom: 104%;
 }
 
 .card__no{
+  width: 30%;
+  height: auto;
 top: -50%;
 }
 
