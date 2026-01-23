@@ -1004,7 +1004,7 @@ bottom: 104%;
     height: 60px;
 
     left: 10%;
-    top: 60%;
+    top: 65%;
     animation: none;
   }
 
@@ -1016,7 +1016,7 @@ bottom: 104%;
     height: 90px;
 
     left: 3%;
-    transform: translateY(-75vh); 
+    top: -20%; 
     }
 
     .circle1{
@@ -1024,7 +1024,7 @@ bottom: 104%;
     height: 40px;
 
     left: 37%;
-    top: -1700%;
+    top: -10%;
   }
 
 
@@ -1033,7 +1033,7 @@ bottom: 104%;
   height: 30px;
 
   left: 20%;
-  top: -2860%;
+  top: -20%;
 }
 
 .circle3{
@@ -1041,7 +1041,7 @@ bottom: 104%;
   height: 18px;
 
   left: 70%;
-  top: -4790%;
+  top: -40%;
 }
 
 .circle4{
@@ -1049,7 +1049,7 @@ bottom: 104%;
   height: 18px;
 
   left: 45%;
-  top: -2990%;
+  top: -20%;
 }
 
 .circle5{
@@ -1057,7 +1057,7 @@ bottom: 104%;
   height: 25px;
 
   left: 30%;
-  top: -2390%;
+  top: -30%;
 }
 
 .circle6{
@@ -1066,14 +1066,14 @@ bottom: 104%;
   box-shadow: 0 0 0 3px #fff inset; 
 
   left: 5%;
-  top: -1940%;
+  top: -19%;
 }
 
 .zukei__img{
   width: 40%;
 
   left: 65%;
-  top: -680%;
+  top: -60%;
 }
 
 
