@@ -995,7 +995,7 @@ bottom: 104%;
     height: 140px;
 
     left: 75%;
-    transform: translateY(calc(-125 * var(--vh)));
+    transform: translateY(calc(-120 * var(--vh)));
   }
 
     .TOP_kazari1{
@@ -1003,7 +1003,7 @@ bottom: 104%;
     height: 90px;
 
     left: -10%;
-    transform: translateY(calc(-125 * var(--vh)));
+    transform: translateY(calc(-135 * var(--vh)));
   }
 
   .TOP_kazari2{
@@ -1011,7 +1011,7 @@ bottom: 104%;
     height: 60px;
 
     left: 10%;
-    transform: translateY(calc(-117 * var(--vh)));
+    transform: translateY(calc(-127 * var(--vh)));
   }
 
   /*小物*/
