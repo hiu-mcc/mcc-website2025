@@ -978,7 +978,7 @@ bottom: 104%;
 
   .TOP__inner{
     left: 20px;
-    top: -960px;
+    top: -60px;
   }
 
 
@@ -1091,7 +1091,7 @@ bottom: 104%;
   .section-card{
     --raise: 20rem;
     padding-top: calc(clamp(1.5rem, 4vw, 3rem) + var(--raise));
-    top: -750px; 
+    top: -50px; 
   }
 
   /*虹文字*/
