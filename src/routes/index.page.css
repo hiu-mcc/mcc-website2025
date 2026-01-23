@@ -226,16 +226,16 @@ body{
 
 .circle6{
   z-index: 12;
-  width: 90px;           /* 大きさ */
-  height: 90px;
+  width: 70px;           /* 大きさ */
+  height: 70px;
   border-radius: 50%;     /* 丸にする */
   background: transparent;
-  box-shadow: 0 0 0 6px #fff inset; 
+  box-shadow: 0 0 0 3px #fff inset; 
 
 
-   position: relative;
-  left: 150px;
-  top: -390px;
+   position: absolute;
+  left: 270px;
+  top: 620px;
   
   /* ふわふわ */
   --float-dur: 4s;
@@ -1057,7 +1057,7 @@ bottom: 104%;
   height: 25px;
 
   left: 30%;
-  top: -10%;
+  top: -25%;
 }
 
 .circle6{
