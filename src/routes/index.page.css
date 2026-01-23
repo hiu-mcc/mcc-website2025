@@ -1012,8 +1012,8 @@ bottom: 104%;
 
 
   .circle{
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
 
     left: 5%;
     top:  -2%; 
@@ -1021,10 +1021,10 @@ bottom: 104%;
 
     .circle1{
     width: 10px;
-    height: 40px;
+    height: 60px;
 
-    left: 37%;
-    top: 13%;
+    left: 45%;
+    top: 45%;
   }
 
 
@@ -1033,7 +1033,7 @@ bottom: 104%;
   height: 30px;
 
   left: 20%;
-  top: 20%;
+  top: 10%;
 }
 
 .circle3{
