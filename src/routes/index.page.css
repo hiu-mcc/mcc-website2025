@@ -1114,10 +1114,10 @@ bottom: 104%;
 /*説明エリア*/
 .section-title_01{
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 16px;
     position: absolute;
-    bottom: 92%;
-    left: 10%;
+    bottom: 95%;
+    left: 7%;
 
 }
 
