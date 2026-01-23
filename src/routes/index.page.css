@@ -1011,7 +1011,7 @@ bottom: 104%;
     height: 60px;
 
     left: 10%;
-    transform: translateY(-133vh); 
+    transform: translateY(calc(-90 * var(--vh)));
   }
 
   /*小物*/
