@@ -963,7 +963,7 @@ bottom: 104%;
 
   .TOP__img{
     height: auto;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 2 / 3;
     object-fit: cover;
     object-position: center top; 
     border-radius: 0 0 90px 90px;
@@ -1001,8 +1001,8 @@ bottom: 104%;
     width: 60px;
     height: 60px;
 
-    left: -5%;
-    transform: translateY(-135vh); 
+    left: -15%;
+    transform: translateY(-133vh); 
   }
 
   /*小物*/
