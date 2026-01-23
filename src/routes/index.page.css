@@ -582,7 +582,7 @@ border-radius: 0 0 50px 50px;
   --raise: 20rem;
   padding-top: calc(clamp(1.5rem, 4vw, 3rem) + var(--raise));
   margin-top: calc(var(--raise) * -1);
-  top: -90px;
+  top: -30px;
 }
 
 
