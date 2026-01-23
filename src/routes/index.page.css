@@ -963,10 +963,10 @@ bottom: 104%;
 
   .TOP__img{
     height: auto;
-    aspect-ratio: 2 / 3;
+    aspect-ratio: 9 / 16;
     object-fit: cover;
     object-position: center top; 
-    border-radius: 0 0 90px 90px;
+    border-radius: 0 0 60px 60px;
   }
   /*topテキスト*/
 
