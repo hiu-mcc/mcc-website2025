@@ -963,6 +963,8 @@ bottom: 104%;
 	/* スマホ */
 @media (max-width: 640px){
 
+    body{ background-attachment: scroll; }
+
   .TOP__img{
     height: auto;
     aspect-ratio: 9 / 16;
