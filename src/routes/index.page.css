@@ -1083,7 +1083,8 @@ bottom: 104%;
 
   /*利用申請*/
     .riyou-badge{
-      top:82%;
+      top: auto; 
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
 
   }
 
