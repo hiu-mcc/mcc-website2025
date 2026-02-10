@@ -6,6 +6,24 @@
 
 
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+  <!--OGP-->
+    <title>Media Creative Center</title>
+  <meta name="description" content="北海道情報大学 メディア・クリエイティブ・センター（MCC）の紹介サイト。利用申請はこちらから" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Media Creative Center" />
+  <meta property="og:description" content="北海道情報大学 メディア・クリエイティブ・センター（MCC）の紹介サイト。施設利用申請はこちらから" />
+  <meta property="og:url" content="https://hiu-mcc.github.io/mcc-website2025/" />
+  <meta property="og:image" content="https://hiu-mcc.github.io/mcc-website2025/MCC/MCC_OGP (2).jpg" />
+  <meta property="og:site_name" content="Media Creative Center" />
+
+  <!-- SNSに表示部分 -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Media Creative Center" />
+  <meta name="twitter:description" content="北海道情報大学 メディア・クリエイティブ・センター（MCC）の紹介サイト。施設利用申請はこちらから" />
+  <meta name="twitter:image" content="https://hiu-mcc.github.io/mcc-website2025/MCC/MCC_OGP (2).jpg" />
 </svelte:head>
 
 <!-- ヘッター部分・メインTOP画像-->
