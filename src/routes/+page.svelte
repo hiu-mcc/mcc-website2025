@@ -9,7 +9,7 @@
 
   <!--OGP-->
     <title>Media Creative Center</title>
-  <meta name="description" content="北海道情報大学 メディア・クリエイティブ・センター（MCC）の紹介サイト。利用申請はこちらから" />
+  <meta name="description" content="北海道情報大学 メディア・クリエイティブ・センター（MCC）の紹介サイト。施設利用申請はこちらから" />
 
   <!-- OGP -->
   <meta property="og:type" content="website" />
