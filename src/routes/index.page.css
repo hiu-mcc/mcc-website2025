@@ -1218,9 +1218,9 @@ bottom: 102%;
   }
 
   .footer-addr{
-    position: relative;
-    left: 10%;
-    top: 12px;
+    position: static;
+    left: auto;
+    margin-top: 10px;
   }
 
   .hiu-logo{
