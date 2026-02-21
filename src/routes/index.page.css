@@ -1225,7 +1225,9 @@ bottom: 102%;
 
   .hiu-logo{
       position: relative;
-      left: 20px;
+      width: 100px;
+      height: auto;
+      left: 50px;
   }
 
   .hiu-logo2{
