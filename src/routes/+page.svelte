@@ -181,7 +181,7 @@
 
 
 <!--  SNS -->
-<section class="container relative py-12 md:py-16 sns-section">
+<section class="container relative sns-section">
   <div class="wmrk_02" aria-hidden="true">OFFICIAL SNS</div>
   <h2 class="section-title_03">公式SNS</h2>
 
@@ -195,23 +195,23 @@
 
     <div class="sns__panel">
       <div class="sns__label">FACEBOOK</div>
+      <a class="sns__link sns__link--above" href="https://www.facebook.com/hiu.mcc/" target="_blank" rel="noopener noreferrer">Facebookで投稿を見る</a>
       <iframe
         class="sns__facebook"
         title="MCC 北海道情報大学のFacebook投稿"
-        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhiu.mcc%2F&tabs=timeline&show_posts=true&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false"
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhiu.mcc%2F&tabs=timeline&show_posts=true&width=500&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false"
         width="500"
-        height="700"
+        height="200"
         loading="lazy"
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <a class="sns__link" href="https://www.facebook.com/hiu.mcc/" target="_blank" rel="noopener noreferrer">Facebookで投稿を見る</a>
     </div>
   </div>
 </section>
 
 <!-- ACCESS -->
-<section class="container relative py-14 md:py-20">
+<section class="container relative pb-14 md:pb-20 access-section">
   <div class="wmrk_03" aria-hidden="true">ACCESS</div>
   <h2 class="section-title_04">アクセス</h2>
 

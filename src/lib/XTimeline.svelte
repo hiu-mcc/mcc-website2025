@@ -49,5 +49,5 @@
     class="twitter-follow-button"
     data-show-count="false"
   >Follow @mcc_hiu</a>
-  <a class="twitter-timeline" href="https://x.com/mcc_hiu?ref_src=twsrc%5Etfw">Posts by mcc_hiu</a>
+  <a class="twitter-timeline" data-height="200" href="https://x.com/mcc_hiu?ref_src=twsrc%5Etfw">Posts by mcc_hiu</a>
 </div>

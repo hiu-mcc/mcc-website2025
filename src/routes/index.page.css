@@ -590,12 +590,24 @@ border-radius: 0 0 50px 50px;
 
 /* SNS */
 .sns{ display:grid; gap: 1.25rem; grid-template-columns: 1fr;}
-.sns-section { margin-top: 5%; } 
+.sns-section { margin-top: 5%; padding-block: 3rem .5rem; }
 @media (min-width: 980px){ .sns{ grid-template-columns: 1fr 1fr; } }
 .sns__label{ font-weight:700; margin-bottom:.5rem; }
 .sns__panel{ min-width:0; }
-.sns__facebook{ display:block; width:100%; max-width:500px; height:700px; border:0; }
+.sns__facebook{ display:block; width:100%; max-width:500px; height:200px; border:0; }
 .sns__link{ display:inline-block; margin-top:.75rem; text-decoration:underline; text-underline-offset:.2em; }
+.sns__link--above{ margin:0 0 .75rem; }
+
+.access-section { padding-top: .5rem; }
+.sns-section .section-title_03,
+.access-section .section-title_04 {
+  position: relative;
+  inset: auto;
+  margin: 0 0 1.5rem;
+}
+.sns-section .wmrk_02,
+.access-section .wmrk_03 { top: 0; line-height: 1; }
+.access-section .wmrk_03 { top: -40px; }
 
 /* 中の iframe をレスポンシブに */
 
