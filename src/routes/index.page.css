@@ -1,5 +1,9 @@
 /* 土台 */
 html, body { margin: 0; padding: 0; width: 100%; overflow-x: hidden; }
+/* 横のはみ出しを隠しつつ、縦方向のスクロール領域を増やさない */
+@supports (overflow-x: clip) {
+  html, body { overflow-x: clip; }
+}
 .container { width: min(1100px, calc(100% - 3rem)); margin-inline: auto; }
 .lead { font-size: 20px; line-height: 1.9;    position: relative; transform: translate(0, -250%); /* X, Y。上へ12px */}
 body{
