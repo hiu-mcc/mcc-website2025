@@ -108,6 +108,7 @@
 
 <script>
   import './index.page.css';
+  import XTimeline from '$lib/XTimeline.svelte';
 
   const facilities = [
     { no: '01', title: '共創エリア',
@@ -186,21 +187,26 @@
 
 
   <div class="sns">
-    <!-- とり-->
     <div class="sns__panel">
       <div class="sns__label">X</div>
-        <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">eDCタワー6F(図書館内)のGスタジオにある <a href="https://twitter.com/hashtag/HIU%E3%83%95%E3%82%A1%E3%83%96?src=hash&amp;ref_src=twsrc%5Etfw">#HIUファブ</a> 、平日12:30〜14:15にオープンしています。レーザー加工機と3Dプリンタが使えます(機材不調の際はご容赦ください)。時間内は学生スタッフが常駐していますのでお気軽におたずねください！ <a href="https://twitter.com/hashtag/johodai?src=hash&amp;ref_src=twsrc%5Etfw">#johodai</a> <a href="https://t.co/I4KaPIayu1">pic.twitter.com/I4KaPIayu1</a></p>&mdash; MCC 北海道情報大学 (@mcc_hiu) <a href="https://twitter.com/mcc_hiu/status/1945329269166702827?ref_src=twsrc%5Etfw">July 16, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <XTimeline />
+      <a class="sns__link" href="https://x.com/mcc_hiu" target="_blank" rel="noopener noreferrer">Xで投稿を見る</a>
     </div>
 
-    <!-- ふぇいす -->
     <div class="sns__panel">
       <div class="sns__label">FACEBOOK</div>
-      <div id="fb-root"></div>
-        <div id="fb-root"></div>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v24.0&appId=APP_ID"></script>
-       <div class="fb-page" data-href="https://www.facebook.com/hiu.mcc/" data-tabs="timeline" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hiu.mcc/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hiu.mcc/">Mcc - Media Creative Center HIU</a></blockquote></div>
-      </div>
+      <iframe
+        class="sns__facebook"
+        title="MCC 北海道情報大学のFacebook投稿"
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhiu.mcc%2F&tabs=timeline&show_posts=true&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false"
+        width="500"
+        height="700"
+        loading="lazy"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <a class="sns__link" href="https://www.facebook.com/hiu.mcc/" target="_blank" rel="noopener noreferrer">Facebookで投稿を見る</a>
+    </div>
   </div>
 </section>
 

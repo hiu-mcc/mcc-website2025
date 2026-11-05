@@ -593,6 +593,9 @@ border-radius: 0 0 50px 50px;
 .sns-section { margin-top: 5%; } 
 @media (min-width: 980px){ .sns{ grid-template-columns: 1fr 1fr; } }
 .sns__label{ font-weight:700; margin-bottom:.5rem; }
+.sns__panel{ min-width:0; }
+.sns__facebook{ display:block; width:100%; max-width:500px; height:700px; border:0; }
+.sns__link{ display:inline-block; margin-top:.75rem; text-decoration:underline; text-underline-offset:.2em; }
 
 /* 中の iframe をレスポンシブに */
 
