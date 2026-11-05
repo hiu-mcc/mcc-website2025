@@ -54,7 +54,7 @@
   <div class="circle6"></div>
 
 <!-- 利用申請ボタン -->
-<a href="/riyou" class="riyou-badge" aria-label="利用申請">
+<a href="https://apricot-network-a77.notion.site/MCC-20d0873fdc6480a2b9b7e283536376e6" class="riyou-badge" aria-label="利用申請">
   <span class="riyou-badge__core">
     利用<br />申請
   </span>
