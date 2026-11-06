@@ -1117,7 +1117,7 @@ bottom: 104%;
 
   .section-card{
     --raise: 20rem;
-    padding-top: calc(clamp(1.5rem, 4vw, 3rem) + var(--raise));
+    padding-top: 1.5rem;
     top: 110px; 
   }
 
@@ -1140,17 +1140,17 @@ bottom: 104%;
 
 /*説明エリア*/
 .section-title_01{
-    white-space: nowrap;
-    font-size: 15px;
-    position: absolute;
-    bottom: 97%;
-    left: 4%;
-
+    white-space: normal;
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    position: static;
+    inset: auto;
+    margin: 0 0 1rem;
 }
 
 .card__no{
   font-size: 120px;
-top: -53%;
+  line-height: 1;
+top: -3rem;
 right: 37%;
 }
 
@@ -1160,25 +1160,30 @@ right: 37%;
 }
 
 .section-title_02{
-left: 60px;
-bottom: 102%;
-
+  position: static;
+  inset: auto;
+  margin: 0 0 3rem;
 }
 
 .card:nth-child(2) .card__no{
   right: 45%;
-  top: -50%;
+  top: -3rem;
   
 }
 
 
 .lead{
-  position: absolute;
+  position: static;
+  inset: auto;
+  transform: none;
+  margin: 0;
   font-size: 14px;
-  bottom: 85%;
-  left: 4%;
 }
 
+.facilities-section .wmrk_01{
+  top: 0;
+  line-height: 1;
+}
 
 /*SNS*/
 

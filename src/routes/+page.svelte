@@ -15,15 +15,15 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Media Creative Center" />
   <meta property="og:description" content="北海道情報大学 メディア・クリエイティブ・センター（MCC）の紹介サイト。施設利用申請はこちらから" />
-  <meta property="og:url" content="https://hiu-mcc.github.io/mcc-website2025/" />
-  <meta property="og:image" content="https://hiu-mcc.github.io/mcc-website2025/MCC/ogp.jpg" />
+  <meta property="og:url" content="https://mcc.do-johodai.ac.jp/" />
+  <meta property="og:image" content="https://mcc.do-johodai.ac.jp/MCC/ogp.jpg" />
   <meta property="og:site_name" content="Media Creative Center" />
 
   <!-- SNSに表示部分 -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Media Creative Center" />
   <meta name="twitter:description" content="北海道情報大学 メディア・クリエイティブ・センター（MCC）の紹介サイト。施設利用申請はこちらから" />
-  <meta name="twitter:image" content="https://hiu-mcc.github.io/mcc-website2025/MCC/ogp.jpg" />
+  <meta name="twitter:image" content="https://mcc.do-johodai.ac.jp/MCC/ogp.jpg" />
 </svelte:head>
 
 <!-- ヘッター部分・メインTOP画像-->
@@ -143,7 +143,7 @@
   </p>
 
   <!-- 施設案内 -->
-  <div class="relative mt-12 md:mt-16">
+  <div class="relative mt-12 md:mt-16 facilities-section">
     <div class="wmrk_01" aria-hidden="true">FACILITIES</div>
     <h2 class="section-title_02">施設案内</h2>
 
