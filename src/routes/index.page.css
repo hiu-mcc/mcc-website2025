@@ -744,10 +744,21 @@ border-radius: 0 0 50px 50px;
 	/* タブレット */
 @media (max-width: 1024px) { 
 
+  .TOP{
+    min-height: 0;
+    aspect-ratio: 3 / 4;
+  }
+
+  .TOP__overlay{
+    position: absolute;
+    inset: 0;
+  }
 
 .TOP__img{
-    height: auto;
-    aspect-ratio: 3 / 4;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center top; 
     border-radius: 0 0 90px 90px;
@@ -755,12 +766,20 @@ border-radius: 0 0 50px 50px;
   /*topテキスト*/
 
   .russo{
-    font-size: 110px;
+    font-size: clamp(2.6rem, 10.75vw, 6.875rem);
   }
 
   .TOP__inner{
-    left: 30px;
-    top: -1830px;
+    left: auto;
+    top: auto;
+    align-self: center;
+    min-width: 0;
+    padding: 30px;
+  }
+
+  .TOP__subtitle{
+    font-size: clamp(.75rem, 2.2vw, 1.25rem);
+    line-height: 1.4;
   }
 
 
@@ -770,7 +789,7 @@ border-radius: 0 0 50px 50px;
     height: 240px;
 
     left: 75%;
-    top: -490%;
+    top: -5%;
   }
 
     .TOP_kazari1{
@@ -778,7 +797,7 @@ border-radius: 0 0 50px 50px;
     height: 190px;
 
     left: -5%;
-    top: -730%;
+    top: -3%;
   }
 
   .TOP_kazari2{
@@ -786,7 +805,7 @@ border-radius: 0 0 50px 50px;
     height: 140px;
 
     left: -5%;
-    top: -1100%;
+    top: 65%;
   }
 
   /*小物*/
@@ -797,7 +816,7 @@ border-radius: 0 0 50px 50px;
     height: 110px;
 
     left: 12%;
-    top: -1410%;
+    top: -2%;
     }
 
     .circle1{
@@ -805,7 +824,7 @@ border-radius: 0 0 50px 50px;
     height: 90px;
 
     left: 25%;
-    top: -1300%;
+    top: 50%;
   }
 
 
@@ -814,7 +833,7 @@ border-radius: 0 0 50px 50px;
   height: 60px;
 
   left: 16%;
-  top: -2520%;
+  top: 13%;
 }
 
 .circle3{
@@ -822,7 +841,7 @@ border-radius: 0 0 50px 50px;
   height: 50px;
 
   left: 50%;
-  top: -2990%;
+  top: 14%;
 }
 
 .circle4{
@@ -830,7 +849,7 @@ border-radius: 0 0 50px 50px;
   height: 40px;
 
   left: 45%;
-  top: -2390%;
+  top: 60%;
 }
 
 .circle5{
@@ -838,7 +857,7 @@ border-radius: 0 0 50px 50px;
   height: 30px;
 
   left: 20%;
-  top: -3100%;
+  top: 55%;
 }
 
 .circle6{
@@ -847,14 +866,14 @@ border-radius: 0 0 50px 50px;
   box-shadow: 0 0 0 3px #fff inset; 
 
   left: 5%;
-  top: -1840%;
+  top: 65%;
 }
 
 .zukei__img{
   width: 45%;
 
   left: 60%;
-  top: -600%;
+  top: -2%;
 }
 
 
@@ -870,9 +889,11 @@ border-radius: 0 0 50px 50px;
   /*コンテンツ部分*/
 
   .section-card{
-    --raise: 20rem;
-    padding-top: calc(clamp(1.5rem, 4vw, 3rem) + var(--raise));
-    top: -1380px; 
+    --raise: 0rem;
+    padding-top: clamp(1.5rem, 4vw, 3rem);
+    margin-top: 2rem;
+    top: auto;
+    z-index: 0;
   }
 
   /*虹文字*/
@@ -895,34 +916,42 @@ border-radius: 0 0 50px 50px;
 
 /*説明エリア*/
 .section-title_01{
-    white-space: nowrap;
-    font-size: 26px;
-    position: absolute;
-    bottom: 97%;
-    left: 27%;
+    white-space: normal;
+    font-size: clamp(1rem, 3vw, 1.625rem);
+    position: static;
+    inset: auto;
+    margin: 0 0 1rem;
 
 }
 
 .card__no{
-top: -30%;
+  font-size: 120px;
+  line-height: 1;
+  top: -3rem;
 }
 
 .section-title_02{
-left: 300px;
-bottom: 104%;
-
+  position: static;
+  inset: auto;
+  margin: 0 0 3rem;
 }
 
 .card:nth-child(2) .card__no{
   right: 70%;
-  top: -30%;
+  top: -3rem;
   
 }
 
 
 .lead{
-  position: relative;
-  transform: translateY(-160%);
+  position: static;
+  transform: none;
+  margin: 0;
+}
+
+.facilities-section .wmrk_01{
+  top: 0;
+  line-height: 1;
 }
 
 
@@ -934,12 +963,12 @@ bottom: 104%;
 }
 
 .sns-section {
-  margin-top: -150%;
+  margin-top: 3rem;
 }
 
 .sns__panel{
   position: relative;
-  left: 15%;
+  left: auto;
 }
 
 .fb-page{
@@ -985,9 +1014,11 @@ bottom: 104%;
 
     body{ background-attachment: scroll; }
 
-  .TOP__img{
-    height: auto;
+  .TOP{
     aspect-ratio: 9 / 16;
+  }
+
+  .TOP__img{
     object-fit: cover;
     object-position: center top; 
     border-radius: 0 0 60px 60px;
@@ -995,12 +1026,11 @@ bottom: 104%;
   /*topテキスト*/
 
   .russo{
-    font-size: 65px;
+    font-size: clamp(2.6rem, 17vw, 4.0625rem);
   }
 
   .TOP__inner{
-    left: 20px;
-    top: -400px;
+    padding: 20px;
   }
 
 
@@ -1116,9 +1146,7 @@ bottom: 104%;
   /*コンテンツ部分*/
 
   .section-card{
-    --raise: 20rem;
     padding-top: 1.5rem;
-    top: 110px; 
   }
 
   /*虹文字*/
@@ -1193,7 +1221,7 @@ right: 37%;
 }
 
 .sns-section {
-  margin-top: 55%;
+  margin-top: 3rem;
 }
 
 .sns__panel{
